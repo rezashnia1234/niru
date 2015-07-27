@@ -21,13 +21,13 @@
 		set(IsAutoRotate,true);
 		
 		<!-- build thumbnails when there is more than one scene (remove the line below to remove the thumbnails) -->
-		<!--
+		<!---->
 		if(scene.count GT 1, buildthumbs(); );
 			openthumb();
-		-->
+		
 		
 		if(startscene === null, copy(startscene,scene[0].name));
-			loadscene("scene_GO01_01_Panorama", null, MERGE);
+			loadscene("scene_Gopro-01_07_sphere", null, MERGE);
 		
 	</action>
 
@@ -47,9 +47,8 @@
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\///////////////////////////////////////////////////////////////////////////////
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\///////////////////////////////////////////////////////////////////////////////
 -->
-
 	
-	<scene name="scene_GO01_01_Panorama" title="GO01.01 Panorama" onstart="action(startscene);" thumburl="panos/GO01_01_Panorama.tiles/thumb.jpg" lat="" lng="" heading="">
+	<scene name="scene_Gopro-01_07_sphere" title="Gopro-01_07_sphere" onstart="action(startscene);" thumburl="panos/Gopro-01_07_sphere.tiles/thumb.jpg" lat="" lng="" heading="">
 		<action name="startscene">
 			//action(activatespotRadar,scene_GO01_01_Panorama, 0); 
 			//set(plugin[radar].heading, 0);
@@ -69,22 +68,20 @@
 			set(plugin[rotate-icon].enabled,true);
 		</action>
 
-		<view hlookat="-151.397" vlookat="8.652" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+		<view hlookat="874.414" vlookat="-5.520" fovtype="MFOV" fov="132.227" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
-		<preview url="panos/GO01_01_Panorama.tiles/preview.jpg" />
+		<preview url="panos/Gopro-01_07_sphere.tiles/preview.jpg" />
 
 		<image>
-				<cube url="panos/GO01_01_Panorama.tiles/ipad3_%s.jpg" />
+			<cube url="panos/Gopro-01_07_sphere.tiles/pano_%s.jpg" />
 		</image>
-
 		<!-- place your scene hotspots here -->
-		<hotspot name="spot1" style="skin_hotspotstyle" ath="-149.491" atv="-1.716" linkedscene="scene_go01_02_panorama" />
 
 	</scene>
 
-	<scene name="scene_GO01_02_Panorama" title="GO01.02 Panorama" onstart="action(startscene);" thumburl="panos/GO01_02_Panorama.tiles/thumb.jpg" lat="" lng="" heading="">
+	<scene name="scene_Gopro-01_17_Panorama-expo2_sphere" title="Gopro-01_17 Panorama-expo2_sphere" onstart="action(startscene);" thumburl="panos/Gopro-01_17_Panorama-expo2_sphere.tiles/thumb.jpg" lat="" lng="" heading="">
 		<action name="startscene">
-			//action(activatespotRadar,scene_GO01_02_Panorama, 0); 
+			//action(activatespotRadar,scene_GO01_01_Panorama, 0); 
 			//set(plugin[radar].heading, 0);
 			//set(plugin[panoControl].heading,0);
 			
@@ -102,530 +99,17 @@
 			set(plugin[rotate-icon].enabled,true);
 		</action>
 
-		<view hlookat="-92.091" vlookat="0.947" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+		<view hlookat="12.037" vlookat="8.933" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
-		<preview url="panos/GO01_02_Panorama.tiles/preview.jpg" />
-
-		<image>
-				<cube url="panos/GO01_02_Panorama.tiles/ipad3_%s.jpg" />
-		</image>
-
-		<!-- place your scene hotspots here -->
-		
-		<hotspot name="spot2" style="skin_hotspotstyle" ath="79.424" atv="6.686" linkedscene="scene_go01_01_panorama" />
-		<hotspot name="spot3" style="skin_hotspotstyle" ath="-94.165" atv="-0.477" linkedscene="scene_go01_04_panorama" />
-		
-
-	</scene>
-
-	<scene name="scene_GO01_03_Panorama" title="GO01.03 Panorama" onstart="action(startscene);" thumburl="panos/GO01_03_Panorama.tiles/thumb.jpg" lat="" lng="" heading="">
-		<action name="startscene">
-			//action(activatespotRadar,scene_GO01_03_Panorama, 0); 
-			//set(plugin[radar].heading, 0);
-			//set(plugin[panoControl].heading,0);
-			
-			set(plugin[play].alpha,0);
-			set(plugin[tolaTime].alpha,0);
-			set(plugin[volume].alpha,0);
-			//hotspot[videospot].stop();
-			//action(pausevideo);
-			
-			set(plugin[MapIcon].alpha,1);
-			set(plugin[MapIcon].enabled,true);
-			set(plugin[Littelplant-icon].alpha,1);
-			set(plugin[Littelplant-icon].enabled,true);
-			set(plugin[rotate-icon].alpha,1);
-			set(plugin[rotate-icon].enabled,true);
-		</action>
-
-		<view hlookat="0" vlookat="0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
-
-		<preview url="panos/GO01_03_Panorama.tiles/preview.jpg" />
+		<preview url="panos/Gopro-01_17_Panorama-expo2_sphere.tiles/preview.jpg" />
 
 		<image>
-				<cube url="panos/GO01_03_Panorama.tiles/ipad3_%s.jpg" />
+			<cube url="panos/Gopro-01_17_Panorama-expo2_sphere.tiles/pano_%s.jpg" />
 		</image>
-
-		<!-- place your scene hotspots here -->
-		<hotspot name="spot1" style="skin_hotspotstyle" ath="72.757" atv="22.888" linkedscene="scene_go01_02_panorama" />
-
-	</scene>
-
-	<scene name="scene_GO01_04_Panorama" title="GO01.04 Panorama" onstart="action(startscene);" thumburl="panos/GO01_04_Panorama.tiles/thumb.jpg" lat="" lng="" heading="">
-		<action name="startscene">
-			//action(activatespotRadar,scene_GO01_04_Panorama, 0); 
-			//set(plugin[radar].heading, 0);
-			//set(plugin[panoControl].heading,0);
-			
-			set(plugin[play].alpha,0);
-			set(plugin[tolaTime].alpha,0);
-			set(plugin[volume].alpha,0);
-			//hotspot[videospot].stop();
-			//action(pausevideo);
-			
-			set(plugin[MapIcon].alpha,1);
-			set(plugin[MapIcon].enabled,true);
-			set(plugin[Littelplant-icon].alpha,1);
-			set(plugin[Littelplant-icon].enabled,true);
-			set(plugin[rotate-icon].alpha,1);
-			set(plugin[rotate-icon].enabled,true);
-		</action>
-
-		<view hlookat="266.933" vlookat="-0.659" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
-
-		<preview url="panos/GO01_04_Panorama.tiles/preview.jpg" />
-
-		<image>
-				<cube url="panos/GO01_04_Panorama.tiles/ipad3_%s.jpg" />
-		</image>
-
-		<!-- place your scene hotspots here -->
-		<hotspot name="spot1" style="skin_hotspotstyle" ath="78.747" atv="5.592" linkedscene="scene_go01_02_panorama" />
-		<hotspot name="spot2" style="skin_hotspotstyle" ath="-94.877" atv="-1.125" linkedscene="scene_go01_08_panorama" />
-		
-
-	</scene>
-
-	<scene name="scene_GO01_07_Panorama" title="GO01.07 Panorama" onstart="action(startscene);" thumburl="panos/GO01_07_Panorama.tiles/thumb.jpg" lat="" lng="" heading="">
-		<action name="startscene">
-			//action(activatespotRadar,scene_GO01_07_Panorama, 0); 
-			//set(plugin[radar].heading, 0);
-			//set(plugin[panoControl].heading,0);
-			
-			set(plugin[play].alpha,0);
-			set(plugin[tolaTime].alpha,0);
-			set(plugin[volume].alpha,0);
-			//hotspot[videospot].stop();
-			//action(pausevideo);
-			
-			set(plugin[MapIcon].alpha,1);
-			set(plugin[MapIcon].enabled,true);
-			set(plugin[Littelplant-icon].alpha,1);
-			set(plugin[Littelplant-icon].enabled,true);
-			set(plugin[rotate-icon].alpha,1);
-			set(plugin[rotate-icon].enabled,true);
-		</action>
-
-		<view hlookat="0" vlookat="0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
-
-		<preview url="panos/GO01_07_Panorama.tiles/preview.jpg" />
-
-		<image>
-				<cube url="panos/GO01_07_Panorama.tiles/ipad3_%s.jpg" />
-		</image>
-
 		<!-- place your scene hotspots here -->
 
 	</scene>
-
-	<scene name="scene_GO01_08_Panorama" title="GO01.08 Panorama" onstart="action(startscene);" thumburl="panos/GO01_08_Panorama.tiles/thumb.jpg" lat="" lng="" heading="">
-		<action name="startscene">
-			//action(activatespotRadar,scene_GO01_08_Panorama, 0); 
-			//set(plugin[radar].heading, 0);
-			//set(plugin[panoControl].heading,0);
-			
-			set(plugin[play].alpha,0);
-			set(plugin[tolaTime].alpha,0);
-			set(plugin[volume].alpha,0);
-			//hotspot[videospot].stop();
-			//action(pausevideo);
-			
-			set(plugin[MapIcon].alpha,1);
-			set(plugin[MapIcon].enabled,true);
-			set(plugin[Littelplant-icon].alpha,1);
-			set(plugin[Littelplant-icon].enabled,true);
-			set(plugin[rotate-icon].alpha,1);
-			set(plugin[rotate-icon].enabled,true);
-		</action>
-
-		<view hlookat="0" vlookat="0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
-
-		<preview url="panos/GO01_08_Panorama.tiles/preview.jpg" />
-
-		<image>
-				<cube url="panos/GO01_08_Panorama.tiles/ipad3_%s.jpg" />
-		</image>
-
-		<!-- place your scene hotspots here -->
-		<hotspot name="spot1" style="skin_hotspotstyle" ath="169.731" atv="2.752" linkedscene="scene_go01_04_panorama" />
-		<hotspot name="spot2" style="skin_hotspotstyle" ath="-2.120" atv="2.786" linkedscene="scene_go01_09_panorama" />
-
-	</scene>
-
-	<scene name="scene_GO01_09_Panorama" title="GO01.09 Panorama" onstart="action(startscene);" thumburl="panos/GO01_09_Panorama.tiles/thumb.jpg" lat="" lng="" heading="">
-		<action name="startscene">
-			//action(activatespotRadar,scene_GO01_09_Panorama, 0); 
-			//set(plugin[radar].heading, 0);
-			//set(plugin[panoControl].heading,0);
-			
-			set(plugin[play].alpha,0);
-			set(plugin[tolaTime].alpha,0);
-			set(plugin[volume].alpha,0);
-			//hotspot[videospot].stop();
-			//action(pausevideo);
-			
-			set(plugin[MapIcon].alpha,1);
-			set(plugin[MapIcon].enabled,true);
-			set(plugin[Littelplant-icon].alpha,1);
-			set(plugin[Littelplant-icon].enabled,true);
-			set(plugin[rotate-icon].alpha,1);
-			set(plugin[rotate-icon].enabled,true);
-		</action>
-
-		<view hlookat="0" vlookat="0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
-
-		<preview url="panos/GO01_09_Panorama.tiles/preview.jpg" />
-
-		<image>
-				<cube url="panos/GO01_09_Panorama.tiles/ipad3_%s.jpg" />
-		</image>
-
-		<!-- place your scene hotspots here -->
-		<hotspot name="spot1" style="skin_hotspotstyle" ath="169.418" atv="-2.881" linkedscene="scene_go01_08_panorama" />
-		<hotspot name="spot2" style="skin_hotspotstyle" ath="5.746" atv="5.608" linkedscene="scene_go01_10_panorama" />
-
-	</scene>
-
-	<scene name="scene_GO01_10_Panorama" title="GO01.10 Panorama" onstart="action(startscene);" thumburl="panos/GO01_10_Panorama.tiles/thumb.jpg" lat="" lng="" heading="">
-		<action name="startscene">
-			//action(activatespotRadar,scene_GO01_10_Panorama, 0); 
-			//set(plugin[radar].heading, 0);
-			//set(plugin[panoControl].heading,0);
-			
-			set(plugin[play].alpha,0);
-			set(plugin[tolaTime].alpha,0);
-			set(plugin[volume].alpha,0);
-			//hotspot[videospot].stop();
-			//action(pausevideo);
-			
-			set(plugin[MapIcon].alpha,1);
-			set(plugin[MapIcon].enabled,true);
-			set(plugin[Littelplant-icon].alpha,1);
-			set(plugin[Littelplant-icon].enabled,true);
-			set(plugin[rotate-icon].alpha,1);
-			set(plugin[rotate-icon].enabled,true);
-		</action>
-
-		<view hlookat="14.277" vlookat="16.651" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
-
-		<preview url="panos/GO01_10_Panorama.tiles/preview.jpg" />
-
-		<image>
-				<cube url="panos/GO01_10_Panorama.tiles/ipad3_%s.jpg" />
-		</image>
-
-		<!-- place your scene hotspots here -->
-		<hotspot name="spot1" style="skin_hotspotstyle" ath="163.896" atv="1.701" linkedscene="scene_go01_09_panorama" />
-		<hotspot name="spot2" style="skin_hotspotstyle" ath="25.750" atv="4.312" linkedscene="scene_go01_11_panorama" />
-
-	</scene>
-
-	<scene name="scene_GO01_11_Panorama" title="GO01.11 Panorama" onstart="action(startscene);" thumburl="panos/GO01_11_Panorama.tiles/thumb.jpg" lat="" lng="" heading="">
-		<action name="startscene">
-			//action(activatespotRadar,scene_GO01_11_Panorama, 0); 
-			//set(plugin[radar].heading, 0);
-			//set(plugin[panoControl].heading,0);
-			
-			set(plugin[play].alpha,0);
-			set(plugin[tolaTime].alpha,0);
-			set(plugin[volume].alpha,0);
-			//hotspot[videospot].stop();
-			//action(pausevideo);
-			
-			set(plugin[MapIcon].alpha,1);
-			set(plugin[MapIcon].enabled,true);
-			set(plugin[Littelplant-icon].alpha,1);
-			set(plugin[Littelplant-icon].enabled,true);
-			set(plugin[rotate-icon].alpha,1);
-			set(plugin[rotate-icon].enabled,true);
-		</action>
-
-		<view hlookat="30.674" vlookat="1.654" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
-
-		<preview url="panos/GO01_11_Panorama.tiles/preview.jpg" />
-
-		<image>
-				<cube url="panos/GO01_11_Panorama.tiles/ipad3_%s.jpg" />
-		</image>
-
-		<!-- place your scene hotspots here -->
-		<hotspot name="spot1" style="skin_hotspotstyle" ath="161.321" atv="-1.355" linkedscene="scene_go01_10_panorama" />
-		<hotspot name="spot2" style="skin_hotspotstyle" ath="47.883" atv="-0.273" linkedscene="scene_go01_12_panorama" />
-
-	</scene>
-
-	<scene name="scene_GO01_12_Panorama" title="GO01.12 Panorama" onstart="action(startscene);" thumburl="panos/GO01_12_Panorama.tiles/thumb.jpg" lat="" lng="" heading="">
-		<action name="startscene">
-			//action(activatespotRadar,scene_GO01_12_Panorama, 0); 
-			//set(plugin[radar].heading, 0);
-			//set(plugin[panoControl].heading,0);
-			
-			set(plugin[play].alpha,0);
-			set(plugin[tolaTime].alpha,0);
-			set(plugin[volume].alpha,0);
-			//hotspot[videospot].stop();
-			//action(pausevideo);
-			
-			set(plugin[MapIcon].alpha,1);
-			set(plugin[MapIcon].enabled,true);
-			set(plugin[Littelplant-icon].alpha,1);
-			set(plugin[Littelplant-icon].enabled,true);
-			set(plugin[rotate-icon].alpha,1);
-			set(plugin[rotate-icon].enabled,true);
-		</action>
-
-		<view hlookat="368.272" vlookat="4.519" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
-
-		<preview url="panos/GO01_12_Panorama.tiles/preview.jpg" />
-
-		<image>
-				<cube url="panos/GO01_12_Panorama.tiles/ipad3_%s.jpg" />
-		</image>
-
-		<!-- place your scene hotspots here -->
-		<hotspot name="spot1" style="skin_hotspotstyle" ath="132.244" atv="0.261" linkedscene="scene_go01_11_panorama" />
-		<hotspot name="spot2" style="skin_hotspotstyle" ath="-0.950" atv="1.261" linkedscene="scene_go01_13_panorama" />
-
-	</scene>
-
-	<scene name="scene_GO01_13_Panorama" title="GO01.13 Panorama" onstart="action(startscene);" thumburl="panos/GO01_13_Panorama.tiles/thumb.jpg" lat="" lng="" heading="">
-		<action name="startscene">
-			//action(activatespotRadar,scene_GO01_13_Panorama, 0); 
-			//set(plugin[radar].heading, 0);
-			//set(plugin[panoControl].heading,0);
-			
-			set(plugin[play].alpha,0);
-			set(plugin[tolaTime].alpha,0);
-			set(plugin[volume].alpha,0);
-			//hotspot[videospot].stop();
-			//action(pausevideo);
-			
-			set(plugin[MapIcon].alpha,1);
-			set(plugin[MapIcon].enabled,true);
-			set(plugin[Littelplant-icon].alpha,1);
-			set(plugin[Littelplant-icon].enabled,true);
-			set(plugin[rotate-icon].alpha,1);
-			set(plugin[rotate-icon].enabled,true);
-		</action>
-
-		<view hlookat="0" vlookat="0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
-
-		<preview url="panos/GO01_13_Panorama.tiles/preview.jpg" />
-
-		<image>
-				<cube url="panos/GO01_13_Panorama.tiles/ipad3_%s.jpg" />
-		</image>
-
-		<!-- place your scene hotspots here -->
-		<hotspot name="spot1" style="skin_hotspotstyle" ath="-7.019" atv="0.347" linkedscene="scene_go01_14_panorama" />
-		<hotspot name="spot2" style="skin_hotspotstyle" ath="169.596" atv="-4.103" linkedscene="scene_go01_12_panorama" />
-
-	</scene>
-
-	<scene name="scene_GO01_14_Panorama" title="GO01.14 Panorama" onstart="action(startscene);" thumburl="panos/GO01_14_Panorama.tiles/thumb.jpg" lat="" lng="" heading="">
-		<action name="startscene">
-			//action(activatespotRadar,scene_GO01_14_Panorama, 0); 
-			//set(plugin[radar].heading, 0);
-			//set(plugin[panoControl].heading,0);
-			
-			set(plugin[play].alpha,0);
-			set(plugin[tolaTime].alpha,0);
-			set(plugin[volume].alpha,0);
-			//hotspot[videospot].stop();
-			//action(pausevideo);
-			
-			set(plugin[MapIcon].alpha,1);
-			set(plugin[MapIcon].enabled,true);
-			set(plugin[Littelplant-icon].alpha,1);
-			set(plugin[Littelplant-icon].enabled,true);
-			set(plugin[rotate-icon].alpha,1);
-			set(plugin[rotate-icon].enabled,true);
-		</action>
-
-		<view hlookat="0" vlookat="0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
-
-		<preview url="panos/GO01_14_Panorama.tiles/preview.jpg" />
-
-		<image>
-				<cube url="panos/GO01_14_Panorama.tiles/ipad3_%s.jpg" />
-		</image>
-
-		<!-- place your scene hotspots here -->
-		<hotspot name="spot1" style="skin_hotspotstyle" ath="-3.074" atv="1.961" linkedscene="scene_go01_15_panorama" />
-		<hotspot name="spot2" style="skin_hotspotstyle" ath="176.862" atv="-5.664" linkedscene="scene_go01_13_panorama" />
-
-	</scene>
-
-	<scene name="scene_GO01_15_Panorama" title="GO01.15 Panorama" onstart="action(startscene);" thumburl="panos/GO01_15_Panorama.tiles/thumb.jpg" lat="" lng="" heading="">
-		<action name="startscene">
-			//action(activatespotRadar,scene_GO01_15_Panorama, 0); 
-			//set(plugin[radar].heading, 0);
-			//set(plugin[panoControl].heading,0);
-			
-			set(plugin[play].alpha,0);
-			set(plugin[tolaTime].alpha,0);
-			set(plugin[volume].alpha,0);
-			//hotspot[videospot].stop();
-			//action(pausevideo);
-			
-			set(plugin[MapIcon].alpha,1);
-			set(plugin[MapIcon].enabled,true);
-			set(plugin[Littelplant-icon].alpha,1);
-			set(plugin[Littelplant-icon].enabled,true);
-			set(plugin[rotate-icon].alpha,1);
-			set(plugin[rotate-icon].enabled,true);
-		</action>
-
-		<view hlookat="0" vlookat="0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
-
-		<preview url="panos/GO01_15_Panorama.tiles/preview.jpg" />
-
-		<image>
-				<cube url="panos/GO01_15_Panorama.tiles/ipad3_%s.jpg" />
-		</image>
-
-		<!-- place your scene hotspots here -->
-		<hotspot name="spot1" style="skin_hotspotstyle" ath="-2.479" atv="2.165" linkedscene="scene_go01_16_panorama" />
-		<hotspot name="spot2" style="skin_hotspotstyle" ath="176.374" atv="-2.461" linkedscene="scene_go01_14_panorama" />
-
-	</scene>
-
-	<scene name="scene_GO01_16_Panorama" title="GO01.16 Panorama" onstart="action(startscene);" thumburl="panos/GO01_16_Panorama.tiles/thumb.jpg" lat="" lng="" heading="">
-		<action name="startscene">
-			//action(activatespotRadar,scene_GO01_16_Panorama, 0); 
-			//set(plugin[radar].heading, 0);
-			//set(plugin[panoControl].heading,0);
-			
-			set(plugin[play].alpha,0);
-			set(plugin[tolaTime].alpha,0);
-			set(plugin[volume].alpha,0);
-			//hotspot[videospot].stop();
-			//action(pausevideo);
-			
-			set(plugin[MapIcon].alpha,1);
-			set(plugin[MapIcon].enabled,true);
-			set(plugin[Littelplant-icon].alpha,1);
-			set(plugin[Littelplant-icon].enabled,true);
-			set(plugin[rotate-icon].alpha,1);
-			set(plugin[rotate-icon].enabled,true);
-		</action>
-
-		<view hlookat="0" vlookat="0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
-
-		<preview url="panos/GO01_16_Panorama.tiles/preview.jpg" />
-
-		<image>
-				<cube url="panos/GO01_16_Panorama.tiles/ipad3_%s.jpg" />
-		</image>
-
-		<!-- place your scene hotspots here -->
-		<hotspot name="spot1" style="skin_hotspotstyle" ath="-2.458" atv="0.587" linkedscene="scene_go01_17_panorama" />
-		<hotspot name="spot2" style="skin_hotspotstyle" ath="173.482" atv="-2.342" linkedscene="scene_go01_15_panorama" />
-
-	</scene>
-
-	<scene name="scene_GO01_17_Panorama" title="GO01.17 Panorama" onstart="action(startscene);" thumburl="panos/GO01_17_Panorama.tiles/thumb.jpg" lat="" lng="" heading="">
-		<action name="startscene">
-			//action(activatespotRadar,scene_GO01_17_Panorama, 0); 
-			//set(plugin[radar].heading, 0);
-			//set(plugin[panoControl].heading,0);
-			
-			set(plugin[play].alpha,0);
-			set(plugin[tolaTime].alpha,0);
-			set(plugin[volume].alpha,0);
-			//hotspot[videospot].stop();
-			//action(pausevideo);
-			
-			set(plugin[MapIcon].alpha,1);
-			set(plugin[MapIcon].enabled,true);
-			set(plugin[Littelplant-icon].alpha,1);
-			set(plugin[Littelplant-icon].enabled,true);
-			set(plugin[rotate-icon].alpha,1);
-			set(plugin[rotate-icon].enabled,true);
-		</action>
-
-		<view hlookat="0" vlookat="0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
-
-		<preview url="panos/GO01_17_Panorama.tiles/preview.jpg" />
-
-		<image>
-				<cube url="panos/GO01_17_Panorama.tiles/ipad3_%s.jpg" />
-		</image>
-
-		<!-- place your scene hotspots here -->
-		
-		<hotspot name="spot2" style="skin_hotspotstyle" ath="175.811" atv="-1.435" linkedscene="scene_go01_16_panorama" />
-		<hotspot name="spot3" style="skin_hotspotstyle" ath="-3.335" atv="-1.349" linkedscene="scene_go01_20_panorama" />
-		
-
-	</scene>
-
-	<scene name="scene_GO01_18_Panorama" title="GO01.18 Panorama" onstart="action(startscene);" thumburl="panos/GO01_18_Panorama.tiles/thumb.jpg" lat="" lng="" heading="">
-		<action name="startscene">
-			//action(activatespotRadar,scene_GO01_18_Panorama, 0); 
-			//set(plugin[radar].heading, 0);
-			//set(plugin[panoControl].heading,0);
-			
-			set(plugin[play].alpha,0);
-			set(plugin[tolaTime].alpha,0);
-			set(plugin[volume].alpha,0);
-			//hotspot[videospot].stop();
-			//action(pausevideo);
-			
-			set(plugin[MapIcon].alpha,1);
-			set(plugin[MapIcon].enabled,true);
-			set(plugin[Littelplant-icon].alpha,1);
-			set(plugin[Littelplant-icon].enabled,true);
-			set(plugin[rotate-icon].alpha,1);
-			set(plugin[rotate-icon].enabled,true);
-		</action>
-
-		<view hlookat="0" vlookat="0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
-
-		<preview url="panos/GO01_18_Panorama.tiles/preview.jpg" />
-
-		<image>
-				<cube url="panos/GO01_18_Panorama.tiles/ipad3_%s.jpg" />
-		</image>
-
-		<!-- place your scene hotspots here -->
-		<hotspot name="spot1" style="skin_hotspotstyle" ath="-3.098" atv="22.437" linkedscene="scene_go01_19_panorama" />
-		<hotspot name="spot2" style="skin_hotspotstyle" ath="535.651" atv="24.092" linkedscene="scene_go01_17_panorama" />
-
-	</scene>
-
-	<scene name="scene_GO01_19_Panorama" title="GO01.19 Panorama" onstart="action(startscene);" thumburl="panos/GO01_19_Panorama.tiles/thumb.jpg" lat="" lng="" heading="">
-		<action name="startscene">
-			//action(activatespotRadar,scene_GO01_19_Panorama, 0); 
-			//set(plugin[radar].heading, 0);
-			//set(plugin[panoControl].heading,0);
-			
-			set(plugin[play].alpha,0);
-			set(plugin[tolaTime].alpha,0);
-			set(plugin[volume].alpha,0);
-			//hotspot[videospot].stop();
-			//action(pausevideo);
-			
-			set(plugin[MapIcon].alpha,1);
-			set(plugin[MapIcon].enabled,true);
-			set(plugin[Littelplant-icon].alpha,1);
-			set(plugin[Littelplant-icon].enabled,true);
-			set(plugin[rotate-icon].alpha,1);
-			set(plugin[rotate-icon].enabled,true);
-		</action>
-
-		<view hlookat="0" vlookat="0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
-
-		<preview url="panos/GO01_19_Panorama.tiles/preview.jpg" />
-
-		<image>
-				<cube url="panos/GO01_19_Panorama.tiles/ipad3_%s.jpg" />
-		</image>
-
-		<!-- place your scene hotspots here -->
-		<hotspot name="spot1" style="skin_hotspotstyle" ath="172.975" atv="27.080" linkedscene="scene_go01_17_panorama" />
-
-	</scene>
+	
 
 <!--
 /////////////////////////////////////////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
